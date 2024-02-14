@@ -59,8 +59,8 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                         <h2 className='text-2xl'>{"My Work"}</h2>
                     </div>
                     {images.map(((img) =>
-                        <div className={`panel relative w-10/12 sm:w-2/3 xl:w-1/3 ${img.url === '' ? '' : 'cursor-pointer hover:opacity-60'}`} style={{ height: `calc(50vh)` }}>
-                            <Image className='w-full' key={img.alt} src={img.img.src} alt={img.alt} height={2400} width={2000} onClick={() => {
+                        <div key={img.alt} className={`panel relative w-10/12 sm:w-2/3 xl:w-1/3 ${img.url === '' ? '' : 'cursor-pointer hover:opacity-60'}`} style={{ height: `calc(50vh)` }}>
+                            <Image className='w-full' src={img.img.src} alt={img.alt} height={2400} width={2000} onClick={() => {
                                 if (img.url !== '') {
                                     window.open(img.url, "_blank")
                                 }
