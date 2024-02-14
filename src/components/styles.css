@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.grace {
+    position: absolute;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .screenDisplay {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobileDisplay {
+        display: none
+    }
+}
