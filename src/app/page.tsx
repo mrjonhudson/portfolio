@@ -1,4 +1,5 @@
 import Header from '@/components/header/Header';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import ImageRow from '@/components/ImageRow';
 import spad from '../../public/img/spad.png'
@@ -11,6 +12,7 @@ import diss from '../../public/img/diss.png'
 import smash from '../../public/img/smash.png'
 import pantree from '../../public/img/pantree.png'
 import jump from '../../public/img/jump.gif'
+import hero from '../../public/img/hero.jpg'
 
 const HomePage: React.FC = () => {
 
@@ -31,6 +33,7 @@ const HomePage: React.FC = () => {
         <>
             <Header />
             <main className='overflow-hidden relative'>
+                <Image priority src={hero} alt={'Hero'} className='hidden' />
                 <Hero />
                 <ImageRow images={images} />
                 <div className="lastContainer w-screen p-4 justify-center flex bg-[var(--dark-void)]">
