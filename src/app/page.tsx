@@ -1,4 +1,4 @@
-import Header from '@/components/Header';
+import Header from '@/components/header/Header';
 import Hero from '@/components/Hero';
 import ImageRow from '@/components/ImageRow';
 import spad from '../../public/img/spad.png'
@@ -9,18 +9,21 @@ import arrow from '../../public/img/arrow.png'
 import graduation from '../../public/img/graduation.png'
 import diss from '../../public/img/diss.png'
 import smash from '../../public/img/smash.png'
+import pantree from '../../public/img/pantree.png'
+import jump from '../../public/img/jump.gif'
 
 const HomePage: React.FC = () => {
 
     const images = [
-        { img: pubgolf, alt: 'work1', url: 'https://google.com' },
+        { img: pantree, alt: 'Pantree', url: '', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
         { img: spad, alt: 'work2', url: 'https://www.saintspad.org.uk', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
+        { img: jump, alt: 'Jump 8-bit Game', url: 'https://www.lexaloffle.com/bbs/?tid=31105', title: 'JUMP', subtext: '8-bit Video Game' },
         { img: smash, alt: 'Smash A Level Maths', url: 'https://smashalevelmaths.com', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://thepubgolfapp.carrd.co', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1oOjldAZFFy4XsV95Spo2bRg56DtxPtH2/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
         { img: arrow, alt: 'arrow', url: '' },
         { img: graduation, alt: 'cv', url: 'https://docs.google.com/file/d/17qyW_k4VeXhIQoZ7Nar7TnhHdXQcmhH5/preview?usp=drivesdk', title: "CV", subtext: "Want to know more?" },
-        { img: connectgif, alt: 'connect with me', url: 'https://google.com', title: 'Connect with me', subtext: "Let's get personal" },
+        { img: connectgif, alt: 'connect with me', url: 'https://www.linkedin.com/in/mrjonhudson', title: 'Connect with me', subtext: "Let's get personal" },
 
     ]
 

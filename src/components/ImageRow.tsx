@@ -8,8 +8,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles.css";
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import PortfolioPage from './PortfolioPage';
 
-interface Image {
+export interface ImageInterface {
     img: StaticImageData;
     alt: string;
     url: string;
@@ -18,7 +19,7 @@ interface Image {
 }
 
 interface ImageRowProps {
-    images: Image[];
+    images: ImageInterface[];
 }
 
 gsap.registerPlugin(ScrollTrigger);
@@ -49,7 +50,7 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
 
     return (
         <>
-            <div ref={component} className='w-[calc(83.3%*6)] sm:w-[calc(66.6%*6)] xl:w-[calc(33.3%*6)]' >
+            <div ref={component} className='w-[calc(83.3%*9)] sm:w-[calc(66.6%*9)] xl:w-[calc(33.3%*9)]' >
                 {/* <div className="fixed">
                     This div element has position: fixed;
                 </div> */}
@@ -59,21 +60,7 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                         <h2 className='text-2xl'>{"My Work"}</h2>
                     </div>
                     {images.map(((img) =>
-                        <div key={img.alt} className={`panel relative w-10/12 sm:w-2/3 xl:w-1/3 ${img.url === '' ? '' : 'cursor-pointer hover:opacity-60'}`} style={{ height: `calc(50vh)` }}>
-                            <Image className='w-full' src={img.img.src} alt={img.alt} height={2400} width={2000} onClick={() => {
-                                if (img.url !== '') {
-                                    window.open(img.url, "_blank")
-                                }
-                            }} />
-                            <div className='p-10'>
-                                <h3 className='text-center text-xl'>
-                                    {img.title}
-                                </h3>
-                                <p className='mt-2 text-center text-l text-[var(--dusty-grey)]'>
-                                    {img.subtext}
-                                </p>
-                            </div>
-                        </div>
+                        <PortfolioPage key={img.alt} image={img} />
                     ))}
                 </div>
             </div ></>
