@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import HeaderList from "./HeaderList";
 import Image from "next/image"
-import instagram from '../../../public/img/instagram.gif'
+import instagram from '../../../public/img/instagram2.gif'
 import linkedIn from '../../../public/img/linkedin.png'
 import twitter from '../../../public/img/twitter.gif'
+import email from '../../../public/img/email.gif'
 
 
 const Header = () => {
@@ -34,7 +35,16 @@ const Header = () => {
                         <Image src={instagram} alt="Instagram gif" />
                     </div>
                 } />
+            <HeaderList
+                title={"Email"}
+                icon={<FaEnvelope />} url={"mailto:mrjonhudson@gmail.com"}
+                hover={
+                    <div className="absolute h-[100px] w-[300px]">
+                        <Image src={email} alt="Email gif" />
+                    </div>
+                } />
         </header>
+
     );
 }
 
