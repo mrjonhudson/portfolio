@@ -7,8 +7,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles.css";
 import Image, { StaticImageData } from 'next/image';
+import jumptape from '../../public/img/jumptape.png'
 import Link from 'next/link';
 import PortfolioPage from './PortfolioPage';
+import Page from './Page';
 
 export interface ImageInterface {
     img: StaticImageData;
@@ -60,7 +62,13 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                         <h2 className='text-2xl'>{"My Work"}</h2>
                     </div>
                     {images.map(((img) =>
-                        <PortfolioPage key={img.alt} image={img} />
+                        img.url === 'jump'
+                            ?
+                            <Page key={img.alt} coverImg={jumptape} title='JUMP' subtext='Press ► To Start'>
+                                <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=52078" height={"100%"} width={"100%"} allowFullScreen className="border-none overflow-hidden rounded-lg"></iframe>
+                            </Page>
+                            :
+                            <PortfolioPage key={img.alt} image={img} />
                     ))}
                 </div>
             </div ></>

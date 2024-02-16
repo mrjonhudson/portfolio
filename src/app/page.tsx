@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
     const images = [
         { img: pantree, alt: 'Pantree', url: '', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
         { img: spad, alt: 'work2', url: 'https://www.saintspad.org.uk', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
-        { img: jump, alt: 'Jump 8-bit Game', url: 'https://www.lexaloffle.com/bbs/?tid=31105', title: 'JUMP', subtext: '8-bit Video Game' },
+        { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: '8-bit Video Game' },
         { img: smash, alt: 'Smash A Level Maths', url: 'https://smashalevelmaths.com', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://thepubgolfapp.carrd.co', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1oOjldAZFFy4XsV95Spo2bRg56DtxPtH2/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
