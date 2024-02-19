@@ -59,7 +59,7 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                 {/* <div ref={slider} className="container flex flex-1 items-center justify-start h-screen "> */}
                 <div ref={slider} className='h-screen items-center justify-start flex'>
                     <div className='absolute flex justify-center w-screen z-10 pointer-events-none' style={{ height: '100%', top: 100 }}>
-                        <h2 className='text-2xl'>{"My Work"}</h2>
+                        <h2 className='text-2xl'>{"A Collection of Stuff I've Built"}</h2>
                     </div>
                     {images.map(((img) =>
                         img.url === 'jump'
