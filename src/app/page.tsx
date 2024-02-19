@@ -20,8 +20,8 @@ import x from '../../public/img/x.png'
 const HomePage: React.FC = () => {
 
     const images = [
-        { img: pantree, alt: 'Pantree', url: '', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
-        { img: spad, alt: 'work2', url: 'https://www.saintspad.org.uk', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
+        { img: pantree, alt: 'Pantree', url: 'https://blog.mrjonhudson.com/pantree', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
+        { img: spad, alt: 'work2', url: 'https://blog.mrjonhudson.com/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
         { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: '8-bit Video Game' },
         { img: smash, alt: 'Smash A Level Maths', url: 'https://smashalevelmaths.com', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://thepubgolfapp.carrd.co', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
