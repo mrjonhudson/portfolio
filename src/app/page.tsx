@@ -23,6 +23,7 @@ const HomePage: React.FC = () => {
         { img: smash, alt: 'Smash A Level Maths', url: 'https://smashalevelmaths.com', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://thepubgolfapp.carrd.co', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1oOjldAZFFy4XsV95Spo2bRg56DtxPtH2/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
+        { img: diss, alt: 'blog', url: 'https://blog.mrjonhudson.com', title: "My Blog", subtext: "Interested in my thoughts?" },
         { img: arrow, alt: 'arrow', url: '' },
         { img: graduation, alt: 'cv', url: 'https://docs.google.com/file/d/17qyW_k4VeXhIQoZ7Nar7TnhHdXQcmhH5/preview?usp=drivesdk', title: "CV", subtext: "Want to know more?" },
         { img: connectgif, alt: 'connect with me', url: 'https://www.linkedin.com/in/mrjonhudson', title: 'Connect with me', subtext: "Let's get personal" },
