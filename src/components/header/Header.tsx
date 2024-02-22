@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { FaEnvelope, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import HeaderList from "./HeaderList";
 import Image from "next/image"
 import instagram from '../../../public/img/instagram2.gif'
 import linkedIn from '../../../public/img/linkedin.png'
 import twitter from '../../../public/img/twitter.gif'
 import email from '../../../public/img/email.gif'
+import github from '../../../public/img/github.gif'
 
 
 const Header = () => {
@@ -36,6 +37,14 @@ const Header = () => {
                     </div>
                 } />
             <HeaderList
+                title={"GitHub"}
+                icon={<FaGithub />} url={"https://github.com/mrjonhudson"}
+                hover={
+                    <div className="absolute h-[100px] w-[300px]">
+                        <Image src={github} alt="Github gif" />
+                    </div>
+                } />
+            <HeaderList
                 title={"Email"}
                 icon={<FaEnvelope />} url={"mailto:mrjonhudson@gmail.com"}
                 hover={
@@ -43,6 +52,7 @@ const Header = () => {
                         <Image src={email} alt="Email gif" />
                     </div>
                 } />
+
         </header>
 
     );
