@@ -42,9 +42,10 @@ const Hero = () => {
                         I research, design and build Apps, Websites and Hardware for consumers.
                     </p>
                 </div>
-                <div className='flex' style={{ justifyContent: 'center', alignItems: 'center' }}>
+                <div className='flex flex-col chevron' style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <p className="text-[var(--snow)]">scroll down</p>
                     <ChevronDown
-                        className='stroke-[var(--snow)] chevron'
+                        className='stroke-[var(--snow)]'
                         size={75}
 
                     />
