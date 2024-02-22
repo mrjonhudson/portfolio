@@ -22,8 +22,8 @@ const HomePage: React.FC = () => {
     const images = [
         { img: pantree, alt: 'Pantree', url: 'https://blog.mrjonhudson.com/posts/pantree', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
         { img: spad, alt: 'work2', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
-        { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: '8-bit Video Game' },
-        { img: smash, alt: 'Smash A Level Maths', url: 'https://smashalevelmaths.com', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
+        { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: 'Press ► To Start' },
+        { img: smash, alt: 'Smash A Level Maths', url: 'https://blog.mrjonhudson.com/posts/smashalevelmaths', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://blog.mrjonhudson.com/posts/pga', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: x, alt: 'x', url: '' },
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1oOjldAZFFy4XsV95Spo2bRg56DtxPtH2/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
@@ -31,7 +31,6 @@ const HomePage: React.FC = () => {
         { img: arrow, alt: 'arrow', url: '' },
         { img: graduation, alt: 'cv', url: 'https://docs.google.com/file/d/17qyW_k4VeXhIQoZ7Nar7TnhHdXQcmhH5/preview?usp=drivesdk', title: "CV", subtext: "Want to know more?" },
         { img: connectgif, alt: 'connect with me', url: 'https://www.linkedin.com/in/mrjonhudson', title: 'Connect with me', subtext: "Let's get personal" },
-
     ]
 
     return (

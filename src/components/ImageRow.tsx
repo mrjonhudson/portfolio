@@ -64,7 +64,7 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                     {images.map(((img) =>
                         img.url === 'jump'
                             ?
-                            <Page key={img.alt} coverImg={jumptape} title='JUMP' subtext='Press ► To Start'>
+                            <Page key={img.alt} coverImg={jumptape} title={img.title} subtext={img.subtext}>
                                 <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=52078" height={"100%"} width={"100%"} allowFullScreen className="border-none overflow-hidden rounded-lg"></iframe>
                             </Page>
                             :
