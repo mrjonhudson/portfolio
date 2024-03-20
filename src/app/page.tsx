@@ -15,6 +15,7 @@ import jump from '../../public/img/jump.gif'
 import hero from '../../public/img/hero.jpg'
 import blog from '../../public/img/blog.png'
 import x from '../../public/img/x.png'
+import Test from '@/components/Test';
 
 
 const HomePage: React.FC = () => {

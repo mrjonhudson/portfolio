@@ -58,8 +58,9 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
                 </div> */}
                 {/* <div ref={slider} className="container flex flex-1 items-center justify-start h-screen "> */}
                 <div ref={slider} className='h-screen items-center justify-start flex'>
-                    <div className='absolute flex justify-center w-screen z-10 pointer-events-none' style={{ height: '100%', top: 100 }}>
+                    <div className='absolute flex w-screen z-10 pointer-events-none items-center flex-col' style={{ height: '100%', top: 100 }}>
                         <h2 className='text-2xl'>{"A Collection of Stuff I've Built"}</h2>
+                        <p className='text-xs text-[var(--dusty-grey)]'>{"keep scrolling down"}</p>
                     </div>
                     {images.map(((img) =>
                         img.url === 'jump'
