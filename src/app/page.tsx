@@ -15,13 +15,17 @@ import jump from '../../public/img/jump.gif'
 import hero from '../../public/img/hero.jpg'
 import blog from '../../public/img/blog.png'
 import x from '../../public/img/x.png'
+import pathfinder from '../../public/img/pathfinder.png'
+import telemetry from '../../public/img/telemetry.png'
 import Test from '@/components/Test';
 
 
 const HomePage: React.FC = () => {
 
     const images = [
-        { img: spad, alt: 'work2', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
+        { img: pathfinder, alt: 'pathfinder', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'PathFinder - AI Webapp', subtext: 'Founding Design Engineer' },
+        { img: telemetry, alt: 'telemetry', url: 'https://blog.mrjonhudson.com/posts/telemetry', title: 'Sim Telemetry App', subtext: 'React | Typescript | Python' },
+        { img: spad, alt: 'spad', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://blog.mrjonhudson.com/posts/pga', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: pantree, alt: 'Pantree', url: 'https://blog.mrjonhudson.com/posts/pantree', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
         { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: 'Press ► To Start' },
@@ -37,9 +41,11 @@ const HomePage: React.FC = () => {
     return (
         <>
             <Header />
-            <main className='overflow-hidden relative'>
-                <Image priority src={hero} alt={'Hero'} className='hidden' />
-                <Hero />
+            <main className='overflow-x-clip'>
+                <div className=''>
+                    <Image priority src={hero} alt={'Hero'} className='hidden' />
+                    <Hero />
+                </div>
                 <ImageRow images={images} />
                 <div className="lastContainer w-screen p-4 justify-center flex bg-[var(--dark-void)]">
                     <p className='text-[var(--snow)]'>🌱 Organic produce from Shropshire</p>
