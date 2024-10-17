@@ -34,15 +34,7 @@ const ImageRow: React.FC<ImageRowProps> = ({ images }) => {
         offset: ["start start", "end end"]
     });
 
-    useEffect(() => {
-        const unsubscribe = scrollYProgress.onChange((value) => {
-            console.log('scrollYProgress:', value);
-        });
-
-        return () => unsubscribe();
-    }, [scrollYProgress]);
-
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"], { ease: easeInOut });
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"], { ease: easeInOut });
 
 
     return (

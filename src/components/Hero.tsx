@@ -10,7 +10,7 @@ const Hero = () => {
                 h-screen 
                 flex
                 flex-col
-                bg-[linear-gradient(to_bottom,transparent,var(--dark-voided)),url(/img/hero.jpg)] 
+                bg-[linear-gradient(to_bottom,transparent,var(--dark-voided)),url(/img/hero2.jpg)] 
                 bg-cover bg-center
                 bg-no-repeat
                 fle

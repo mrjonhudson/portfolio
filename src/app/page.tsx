@@ -23,12 +23,12 @@ import Test from '@/components/Test';
 const HomePage: React.FC = () => {
 
     const images = [
-        { img: pathfinder, alt: 'pathfinder', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'PathFinder - AI Webapp', subtext: 'Founding Design Engineer' },
-        { img: telemetry, alt: 'telemetry', url: 'https://blog.mrjonhudson.com/posts/telemetry', title: 'Sim Telemetry App', subtext: 'React | Typescript | Python' },
+        { img: pathfinder, alt: 'pathfinder', url: '', title: 'PathFinder - AI Webapp', subtext: 'Founding Design Engineer' },
+        { img: telemetry, alt: 'telemetry', url: 'https://blog.mrjonhudson.com/posts/telemetry', title: 'Sim Telemetry Webapp', subtext: 'React | Typescript | Python' },
         { img: spad, alt: 'spad', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://blog.mrjonhudson.com/posts/pga', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
         { img: pantree, alt: 'Pantree', url: 'https://blog.mrjonhudson.com/posts/pantree', title: 'Pantree', subtext: 'Product | Figma | Mobile Design' },
-        { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: 'Press ► To Start' },
+        { img: jump, alt: 'Jump 8-bit Game', url: 'jump', title: 'JUMP', subtext: 'Press ► To Start, Tap fast Z and X to move' },
         { img: smash, alt: 'Smash A Level Maths', url: 'https://blog.mrjonhudson.com/posts/smashalevelmaths', title: "Smash A Level Maths", subtext: "Frontend | Wordpress" },
         { img: x, alt: 'x', url: '' },
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1oOjldAZFFy4XsV95Spo2bRg56DtxPtH2/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
