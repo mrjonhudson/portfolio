@@ -23,7 +23,7 @@ import Test from '@/components/Test';
 const HomePage: React.FC = () => {
 
     const images = [
-        { img: pathfinder, alt: 'pathfinder', url: '', title: 'PathFinder - AI Webapp', subtext: 'Founding Design Engineer' },
+        { img: pathfinder, alt: 'pathfinder', url: 'https://blog.mrjonhudson.com/posts/pathfinder', title: 'PathFinder', subtext: 'AI Webapp' },
         { img: telemetry, alt: 'telemetry', url: 'https://blog.mrjonhudson.com/posts/telemetry', title: 'Sim Telemetry Webapp', subtext: 'React | Typescript | Python' },
         { img: spad, alt: 'spad', url: 'https://blog.mrjonhudson.com/posts/spad', title: 'SPAD', subtext: 'Lead EV Engineer | Website Design' },
         { img: pubgolf, alt: 'Pub Golf', url: 'https://blog.mrjonhudson.com/posts/pga', title: "Pub Golf App", subtext: "Fullstack | React Native | Typescript" },
