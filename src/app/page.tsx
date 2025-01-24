@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
         { img: diss, alt: 'diss', url: 'https://docs.google.com/file/d/1wLm2BNUujs1JnrWqdSIHGgFe2ueHm4DHf6z21N88dzk/preview', title: "UI/UX Research", subtext: "Read my dissertation" },
         { img: blog, alt: 'blog', url: 'https://blog.mrjonhudson.com', title: "My Blog", subtext: "Interested in my thoughts?" },
         { img: arrow, alt: 'arrow', url: '' },
-        { img: graduation, alt: 'cv', url: 'https://docs.google.com/file/d/17qyW_k4VeXhIQoZ7Nar7TnhHdXQcmhH5/preview?usp=drivesdk', title: "CV", subtext: "Want to know more?" },
+        { img: graduation, alt: 'cv', url: 'https://docs.google.com/file/d/1j4ITFVDaCHSt8mjsJsSY0SNL_92LafY3/preview?usp=drivesdk', title: "CV", subtext: "Want to know more?" },
         { img: connectgif, alt: 'connect with me', url: 'https://www.linkedin.com/in/mrjonhudson', title: 'Connect with me', subtext: "Let's get personal" },
     ]
 
